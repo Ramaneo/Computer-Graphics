@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <title>Bar Chart</title>
+  </head>
+  <body>
+    <svg width="1000" height="800">
+      <!-- My Data Values 
+      const data = [5438, 5416, 6087, 6142, 6865, 5934, 8793, 8079, 9380, 9089];
+      HEIGHT=VALUE*(SVG HEIGHT / MAX VALUE) = VALUE*(600/9380)
+      dataHeight = [347.84648187633263, 346.4392324093817, 389.36034115138597, 392.87846481876335, 439.12579957356076, 379.5735607675906, 562.452025586354, 516.7803837953091, 600, 581.3859275053305
+      -->
+
+      <line x1="70" y1="100" x2="70" y2="770" stroke="black" stroke-width="2" />
+      <line
+        x1="25"
+        y1="701"
+        x2="900"
+        y2="701"
+        stroke="black"
+        stroke-width="2"
+      />
+
+      <g transform="translate(100,0)">
+        <text x="250" y="50">Infectious and parasitic diseases</text>
+        <g transform="translate(0,100)">
+          <text x="-70" y="-20">(deaths)</text>
+          <text x="-70" y="24">9000</text>
+          <line
+            x1="-35"
+            y1="24"
+            x2="-30"
+            y2="24"
+            stroke="black"
+            stroke-width="2"
+          />
+          <text x="-70" y="120">7500</text>
+          <line
+            x1="-35"
+            y1="120"
+            x2="-30"
+            y2="120"
+            stroke="black"
+            stroke-width="2"
+          />
+          <text x="-70" y="216">6000</text>
+          <line
+            x1="-35"
+            y1="216"
+            x2="-30"
+            y2="216"
+            stroke="black"
+            stroke-width="2"
+          />
+          <text x="-70" y="312">4500</text>
+          <line
+            x1="-35"
+            y1="312"
+            x2="-30"
+            y2="312"
+            stroke="black"
+            stroke-width="2"
+          />
+          <text x="-70" y="408">3000</text>
+          <line
+            x1="-35"
+            y1="408"
+            x2="-30"
+            y2="408"
+            stroke="black"
+            stroke-width="2"
+          />
+          <text x="-70" y="504">1500</text>
+          <line
+            x1="-35"
+            y1="504"
+            x2="-30"
+            y2="504"
+            stroke="black"
+            stroke-width="2"
+          />
+
+          <!-- First set of bars (2018) -->
+          <rect x="0" y="253" width="40" height="347" fill="#3e4980" />
+          <text x="25" y="580" transform="rotate(270 25 580)" fill="white">
+            5438
+          </text>
+          <rect x="50" y="254" width="40" height="346" fill="#803e47" />
+          <text x="75" y="580" transform="rotate(270 75 580)" fill="white">
+            5416
+          </text>
+
+          <!-- Second set of bars (2019) -->
+          <rect x="150" y="211" width="40" height="389" fill="#3e4980" />
+          <text x="175" y="580" transform="rotate(270 175 580)" fill="white">
+            6087
+          </text>
+          <rect x="200" y="208" width="40" height="392" fill="#803e47" />
+          <text x="225" y="580" transform="rotate(270 225 580)" fill="white">
+            6142
+          </text>
+
+          <!-- Third set of bars (2020) -->
+          <rect x="300" y="161" width="40" height="439" fill="#3e4980" />
+          <text x="325" y="580" transform="rotate(270 325 580)" fill="white">
+            6865
+          </text>
+          <rect x="350" y="221" width="40" height="379" fill="#803e47" />
+          <text x="375" y="580" transform="rotate(270 375 580)" fill="white">
+            5934
+          </text>
+
+          <!-- Fourth set of bars (2021) -->
+          <rect x="450" y="38" width="40" height="562" fill="#3e4980" />
+          <text x="475" y="580" transform="rotate(270 475 580)" fill="white">
+            8793
+          </text>
+          <rect x="500" y="84" width="40" height="516" fill="#803e47" />
+          <text x="525" y="580" transform="rotate(270 525 580)" fill="white">
+            8079
+          </text>
+
+          <!-- Fifth set of bars (2022) -->
+          <rect x="600" y="0" width="40" height="600" fill="#3e4980" />
+          <text x="625" y="580" transform="rotate(270 625 580)" fill="white">
+            9380
+          </text>
+          <rect x="650" y="19" width="40" height="581" fill="#803e47" />
+          <text x="675" y="580" transform="rotate(270 675 580)" fill="white">
+            9089
+          </text>
+
+          <rect x="795" y="200" width="30" height="10" fill="#803e47" />
+          <text x="830" y="209">women</text>
+          <rect x="795" y="220" width="30" height="10" fill="#3e4980" />
+          <text x="830" y="229">men</text>
+
+          <!-- Add labels for each set of bars -->
+          <text x="0" y="630">men</text>
+          <text x="50" y="630">women</text>
+          <text x="30" y="660">2018</text>
+          <text x="150" y="630">men</text>
+          <text x="200" y="630">women</text>
+          <text x="180" y="660">2019</text>
+          <text x="300" y="630">men</text>
+          <text x="350" y="630">women</text>
+          <text x="330" y="660">2020</text>
+          <text x="450" y="630">men</text>
+          <text x="500" y="630">women</text>
+          <text x="480" y="660">2021</text>
+          <text x="600" y="630">men</text>
+          <text x="650" y="630">women</text>
+          <text x="630" y="660">2022</text>
+        </g>
+      </g>
+    </svg>
+  </body>
+</html>
